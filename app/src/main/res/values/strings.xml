@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Auto Call</string>
+    
+    <!-- Service Status -->
+    <string name="service_status_running">Service Status: Running</string>
+    <string name="service_status_stopped">Service Status: Stopped</string>
+    
+    <!-- API Configuration -->
+    <string name="api_configuration">API Configuration</string>
+    <string name="api_url_hint">API URL</string>
+    <string name="save_api_url">Save API URL</string>
+    
+    <!-- Service Control -->
+    <string name="service_control">Service Control</string>
+    <string name="start_service">Start Service</string>
+    <string name="stop_service">Stop Service</string>
+    
+    <!-- Permissions -->
+    <string name="permissions">Permissions</string>
+    <string name="checking_permissions">Checking permissions…</string>
+    <string name="check_permissions">Check Permissions</string>
+    
+    <!-- Instructions -->
+    <string name="instructions">
+        Instructions:\n
+        1. Enter the API URL that returns phone numbers\n
+        2. Grant all required permissions\n
+        3. Disable battery optimization for this app\n
+        4. Start the service to begin auto-calling\n\n
+        The service will check the API every 30 seconds for new phone numbers and automatically dial them.
+        Each call will automatically hang up after 20 seconds.\n\n
+        Note: Some manufacturers require additional settings to keep background services running.
+    </string>
+    
+    <!-- Notification -->
+    <string name="notification_channel_name">Auto Call Service</string>
+    <string name="notification_channel_description">Notification for auto call background service</string>
+</resources>
