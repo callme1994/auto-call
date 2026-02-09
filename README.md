@@ -58,18 +58,34 @@ app/
 - 测试设备: Android 8.0+ (API 26+)
 
 ### 2. 构建应用
+
+#### 使用 Android Studio (推荐)
+1. 克隆仓库:
+```bash
+git clone https://github.com/callme1994/auto-call.git
+```
+2. 使用 Android Studio 打开项目
+3. 等待 Gradle 同步完成
+4. 连接 Android 设备或启动模拟器
+5. 点击 Run 按钮 (▶️) 或使用快捷键 Shift+F10
+
+#### 使用命令行
 ```bash
 # 克隆仓库
 git clone https://github.com/callme1994/auto-call.git
 cd auto-call
 
-# 使用Android Studio打开项目
-# 或使用命令行构建
+# 构建 Debug APK
 ./gradlew assembleDebug
 
 # 安装到设备
 ./gradlew installDebug
+
+# 或手动安装
+adb install app/build/outputs/apk/debug/app-debug.apk
 ```
+
+**注意**: 首次构建需要下载 Gradle wrapper 和依赖库，可能需要较长时间。
 
 ### 3. 权限配置
 
